@@ -7,5 +7,5 @@ urlpatterns = [
     #ex: /blog/
     path('', views.index,name='index'),
     #ex:/blog/1
-    path('<int:article_id>/',views.detail, name='detail')
+    path('<int:posts_id>/',views.detail, name='detail')
 ]

@@ -1,7 +1,12 @@
-{% comment %} <h1> {{article.heading.heading_text}}</h1>
-<br>
-
-{{article.post_full}} {% endcomment %}
-
 
 <h3>This is detail page</h3>
+
+{% if posts%}
+
+
+<h2>{{ post.title }}</h2>
+<p>{{ post.timestamp }}</p>
+<p>{{ post.body }}</p>
+
+
+{% endif %}
