@@ -1,12 +1,14 @@
+{% extends 'blog/base.html' %}
 
-<h3>This is detail page</h3>
+{% block content %}
+    <h1> Detail view</h1>
+    
+    {% for post in posts%}
+        
+            {{post.id.author}}
+            {{post.id.date_posted}}
+            <p>{{post.id.content}}</p>
+        
 
-{% if posts%}
-
-
-<h2>{{ post.title }}</h2>
-<p>{{ post.timestamp }}</p>
-<p>{{ post.body }}</p>
-
-
-{% endif %}
+    {% endfor%}
+{% endblock content %}
